@@ -23,13 +23,8 @@ __펩시 제로 최고__
 > 인용문 사용하기
 >> 인용문은 잘 써야 한다
     
-'''python
-import torch
-import numpy as np
-s = "highlight using python"
-print s
-'''
 ```python
+import pytorch
 s = "Python syntax highlighting"
 print s
 ```
