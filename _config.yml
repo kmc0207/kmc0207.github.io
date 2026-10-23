@@ -1,48 +1,63 @@
-# Setup
-title: If I Push
-url: https://getpoole.com
-paginate: 1
-baseurl: ""
-permalink: pretty
+# Site settings
+title: "Minchan Kwon - CV"
+description: "Personal CV of Minchan Kwon, Ph.D student at KAIST EE."
 
-# Gems
-plugins:
-  - jekyll-gist
-  - jekyll-paginate
-  - jekyll-seo-tag
-
-# Optimize Jekyll
-exclude:
-  - .editorconfig
-  - .git
-  - .jekyll-cache
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE.md
-  - README.md
-
+# Build settings
+markdown: kramdown
 sass:
   sass_dir: _sass
-  style: :compressed
+  style: compressed
 
-# Options
+# Resume settings
+resume_avatar:                  "true"
+resume_name:                    "Minchan Kwon"
+resume_title:                   "About Me"
 
-# Replace this value and uncomment to enable Google Analytics tracking
-# ga_analytics: UA-000000-0
+# used for the contact button in _layouts/resume.html
+resume_contact_email:           "kmc020700@gmail.com"
 
-# Specify the author for blog posts
-author:
-  name: If I Push
-  url: kmc0207.github.io
-  email: kmc020700@gmail.com
+# the next two items are used for schema itemprops in _layouts/resume.html
+resume_contact_telephone:       "+82-10-8558-1695"
+resume_contact_address:         ""
 
-# Custom vars
-version: 3.0.0
+resume_header_contact_info:     "kmc020700@gmail.com &bull; +82-10-8558-1695 &bull; <a href='https://github.com/kmc0207'>github.com/kmc0207</a> &bull; <a href='https://www.linkedin.com/in/kmc0207'>linkedin.com/in/kmc0207</a>"
+display_header_contact_info:    "true"
 
-# Navbar page list
-nav:
-  - title: Blog
-    url: /archive
+resume_header_intro: "<p>I am a PhD student at KAIST working on reinforcement learning and LLM post-training. My research focuses on understanding and improving how language models learn from rewards and trajectories, with an emphasis on training stability, diversity, and reasoning. I am particularly interested in developing learning algorithms that help language models acquire new capabilities through interaction and feedback.</p>"
 
-  - title: About
-    url: /about
+# use "yes" to display the email contact button,
+# "no" to display an "I'm not looking for work" message,
+# or remove the resume_looking_for_work option entirely
+# to leave blank
+resume_looking_for_work:        "yes"
+
+# Decide which sections to use
+# comment out to hide
+resume_section_experience:      true
+resume_section_education:       true
+resume_section_projects:        true
+resume_section_skills:          false
+resume_section_recognition:     false
+resume_section_links:           false
+resume_section_associations:    false
+# resume_section_interests:       true
+
+# Resume social links
+# uncomment the options you wish to display, and add your own URL
+resume_social_links:
+  resume_github_url:            "https://github.com/kmc0207"
+  resume_linkedin_url:          "https://www.linkedin.com/in/kmc0207"
+resume_print_social_links:      true
+
+# Barron-style home layout (_layouts/home.html)
+home_affiliation:               "Ph.D. student, School of Electrical Engineering, KAIST"
+home_advisor:                   "Junmo Kim"
+home_advisor_url:               ""
+home_scholar_url:               ""
+
+# Design settings
+resume_theme:                   default
+
+# Note: when editing locally, remember to restart
+# your Jekyll server when you edit this file. Changes
+# to _config.yml are only recognized when the server starts
